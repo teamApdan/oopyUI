@@ -13,16 +13,17 @@
 import sidebar from './sidebar/index.mjs';
 import ht from './hideTranslate/index.mjs';
 
-const Config = {
-  _sidebar: window.sidebar ?? false,
-  _hiddenTranslate: window.hiddenTranslate ?? true,
-};
+// const Config = {
+//   _sidebar: window.sidebar ?? false,
+//   _hiddenTranslate: window.hiddenTranslate ?? true,
+// };
 
 document.addEventListener('DOMContentLoaded', function () {
-  if (Config._sidebar) {
+  console.log(oopyUiConfig);
+  if (oopyUiConfig._sidebar) {
     sidebar();
   }
-  if (Config._hiddenTranslate) {
+  if (oopyUiConfig._hiddenTranslate) {
     ht();
   }
 });
