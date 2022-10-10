@@ -58,6 +58,7 @@ function handleSidebarScrollChange() {
   }
 }
 export default function sidebar() {
+  console.log('sidebar');
   PAGE.elementTitle = document.getElementsByClassName('width')[0];
   PAGE.elementTCB = document.getElementsByClassName(
     'notion-table_of_contents-block'
