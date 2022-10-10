@@ -8,7 +8,7 @@
   "scripts": {
 	"rm": "rm -rf dist/",
     "build": "esbuild `find ./src -name 'index.mjs'` --bundle --minify --sourcemap --outdir=dist",
-    "test": "esbuild src/index.mjs --bundle --outfile=dist/test.js && open index.html"
+    "test": "esbuild src/index.mjs --bundle --outfile=dist/test.js && open test/test2.html"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.9",
