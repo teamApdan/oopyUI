@@ -21,9 +21,18 @@ import ht from './hideTranslate/index.mjs';
 document.addEventListener('DOMContentLoaded', function () {
   console.log(oopyUiConfig);
   if (oopyUiConfig._sidebar) {
-    sidebar();
+    (async () => {
+      const src = './sidebar/index.js';
+      const sidebar = await import(src);
+
+      sidebar();
+    })();
   }
   if (oopyUiConfig._hiddenTranslate) {
-    ht();
+    (async () => {
+      const src = './di2.js';
+      const helloworld = await import(src);
+      helloworld.print();
+    })();
   }
 });

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/di2.mjs"],
+  "sourcesContent": ["function helloworld() {\n  function print() {\n    console.log('Hello World!');\n  }\n  return print;\n}\n\nexport default helloworld;\n"],
+  "mappings": "MAAA,SAASA,GAAa,CACpB,SAASC,GAAQ,CACf,QAAQ,IAAI,cAAc,CAC5B,CACA,OAAOA,CACT,CAEA,IAAOC,EAAQF",
+  "names": ["helloworld", "print", "di2_default"]
+}

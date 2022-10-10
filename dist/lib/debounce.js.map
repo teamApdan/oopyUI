@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/lib/debounce.mjs"],
+  "sourcesContent": ["/*\n * File: debounce.mjs\n * Project: oopy-custom-code\n * Created Date: 2022-08-03 04:42\n * Author: hostname (skdusdl8804@gmail.com)\n * -----\n * Last Modified: 2022-08-03 04:49\n * Modified By: Chloekkk\n * -----\n * Copyright (c) 2022 Chloekkk\n */\n\nexport default function debounce(func, delay = 100) {\n  let timer;\n  return function (...args) {\n    if (timer) clearTimeout(timer);\n    timer = setTimeout(() => func.apply(this, args), delay);\n  };\n}\n"],
+  "mappings": "MAYe,SAARA,EAA0BC,EAAMC,EAAQ,IAAK,CAClD,IAAIC,EACJ,OAAO,YAAaC,EAAM,CACpBD,GAAO,aAAaA,CAAK,EAC7BA,EAAQ,WAAW,IAAMF,EAAK,MAAM,KAAMG,CAAI,EAAGF,CAAK,CACxD,CACF",
+  "names": ["debounce", "func", "delay", "timer", "args"]
+}

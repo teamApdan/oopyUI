@@ -80,10 +80,18 @@
   document.addEventListener("DOMContentLoaded", function() {
     console.log(oopyUiConfig);
     if (oopyUiConfig._sidebar) {
-      sidebar();
+      (async () => {
+        const src = "./sidebar/index.js";
+        const sidebar2 = await import(src);
+        sidebar2();
+      })();
     }
     if (oopyUiConfig._hiddenTranslate) {
-      hideTranslate();
+      (async () => {
+        const src = "./di2.js";
+        const helloworld = await import(src);
+        helloworld.print();
+      })();
     }
   });
 })();
