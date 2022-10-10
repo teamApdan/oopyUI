@@ -12,9 +12,7 @@
 
 export default function hideTranslate() {
   const notionTranslate = document.querySelector('div.notion-topbar');
-  console.log('fuck', notionTranslate);
   if (notionTranslate) {
-    console.log('sibal', notionTranslate.nextSibling.nextSibling);
     notionTranslate.nextSibling.nextSibling.style.display = 'none';
   }
 }
